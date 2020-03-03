@@ -1,0 +1,297 @@
+/* CSS DOCUMENT */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* HOME */
+
+html {
+
+    background: url(images/sushi-home.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+    margin: auto;
+    width: 70%;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (min-width: 45em) {
+    body {
+        width: 50%;
+    } 
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #29d2c4;
+}
+
+h3 {
+    font-size: 1.3em;
+    color: #29d2c4;
+}
+
+.logo {
+  position: absolute;
+  width: 50%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.small-logo {
+    width: 15%;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote {
+    position: absolute;
+    text-align: center;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mainmenu li {
+    font-size: .8em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    padding: .5em;
+    text-align: center;
+    display: inline;
+    margin: 0;
+}
+
+.mainmenu ul {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 8em;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+
+a:link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #29d2c4 !important;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+
+
+
+
+
+/* MENU */
+
+.byob {
+    margin: 2em 0em 1em 0em;
+}
+
+.menu {
+    margin-bottom: 8em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*setting alpha = 0.5*/ 
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1em 2em 2em 2em;
+}
+
+.menu h3 {
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu h4 {
+    width: 70%;
+    font-size: 1.2em;  
+}
+
+.menu p {
+   margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 75em) {
+ .appetizers, .sushiappetizers, .lunch, .dessert {
+    float: left;
+     width: 50%;
+}
+    .menu {
+        margin-bottom: 65em;
+        margin-top: 0em;
+    }
+    footer {
+        float: none;
+        clear: both;
+    }
+   
+}
+
+
+
+
+
+/* LOCATION */
+
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+    margin: 2em 0em 3em 0em;
+    float: none;
+    clear: both;
+    
+}
+ 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+.address {
+    margin-top: 1.5em;
+}
+
+.phones, .hours {
+    margin-top: 2em;
+}
+
+@media only screen and (min-width: 75em) {
+    
+    .address, .phones, .hours {
+        float: left;
+        width: 33%;
+        margin-bottom: 3em;
+    }  
+}
+
+
+
+
+
+/* REVIEWS */
+
+
+.reviews {
+    margin-bottom: 5em;
+    line-height: 1.5em;
+}
+
+.reviews h3 {
+    margin-top: 1em;
+}
+
+.review1, .review2 {
+    /*setting alpha = 0.5*/ 
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.1em 2em 2em 2em;
+}
+
+.pictures {
+    margin-bottom: 3em;
+    float: none;
+    clear: both;
+}
+
+.pictures h2, .reviews h2 {
+    margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 75em) {
+    .review1, .review2 {
+    width: 35%;
+    float: left;
+  }
+    
+    .review2 {
+        margin-left: 2em;
+    }
+    
+    .reviews {
+        margin-bottom: 40em;
+    }
+}
+
+
+
+
+
+
+/* FOOTER */
+
+
+.footer-home {
+    padding-bottom: 2em;
+    font-size: 0.8em;
+    line-height: 1em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 2em;
+    font-size: 0.8em;
+    line-height: 1em;
+}
