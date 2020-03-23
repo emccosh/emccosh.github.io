@@ -1,8 +1,12 @@
 /* CSS DOCUMENT */
+
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,16 +29,15 @@ time, mark, audio, video {
 }
 
 
-
 /* HOME */
 
 html {
 
     background: url(images/sushi-home.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body {
@@ -44,35 +47,28 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+@media only screen and (min-width: 45em) {
+    body {
+        width: 50%;
+    } 
+}
+
 h2 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: #29d2c4;
-    text-transform: uppercase;
-    margin-bottom: 1em;
 }
 
 h3 {
     font-size: 1.3em;
     color: #29d2c4;
-    margin-top: 3em;
-    margin-bottom: 1em;
-}
-
-h4 {
-    width: 70%;
-    font-size: 1.1em; 
-}
-
-p {
-    margin-bottom: 1em;
 }
 
 .logo {
-    position: absolute;
-    width: 50%;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  width: 50%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .small-logo {
@@ -104,7 +100,7 @@ p {
 .mainmenu ul {
     text-align: center;
     margin-top: 2em;
-    margin-bottom: 5em;
+    margin-bottom: 8em;
     padding: 0;
 }
 
@@ -136,10 +132,6 @@ a:visited {
 
 .byob {
     margin: 2em 0em 1em 0em;
-    /*setting alpha = 0.5*/ 
-    background: rgba(0, 0, 0, 0.5);
-    padding: 2em 2em 2em 2em;
-    border-radius: 1.5em;
 }
 
 .menu {
@@ -147,11 +139,45 @@ a:visited {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    /*setting alpha = 0.5*/ 
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1em 2em 2em 2em;
+}
+
+.menu h3 {
+    margin-top: 3em;
+    margin-bottom: 1em;
 }
 
 .menu ul {
     list-style: none;
 }
+
+.menu h4 {
+    width: 70%;
+    font-size: 1.2em;  
+}
+
+.menu p {
+   margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 75em) {
+ .appetizers, .sushiappetizers, .lunch, .dessert {
+    float: left;
+     width: 50%;
+}
+    .menu {
+        margin-bottom: 65em;
+        margin-top: 0em;
+    }
+    footer {
+        float: none;
+        clear: both;
+    }
+   
+}
+
 
 
 
@@ -160,12 +186,13 @@ a:visited {
 
 
 .iframe-container {
-    overflow: hidden;
-    padding-top: 56.25%;
-    position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
     margin: 2em 0em 3em 0em;
     float: none;
     clear: both;
+    
 }
  
 .iframe-container iframe {
@@ -175,7 +202,6 @@ a:visited {
    position: absolute;
    top: 0;
    width: 100%;
-    border-radius: 1.5em;
 }
 
 .address {
@@ -184,6 +210,15 @@ a:visited {
 
 .phones, .hours {
     margin-top: 2em;
+}
+
+@media only screen and (min-width: 75em) {
+    
+    .address, .phones, .hours {
+        float: left;
+        width: 33%;
+        margin-bottom: 3em;
+    }  
 }
 
 
@@ -206,7 +241,6 @@ a:visited {
     /*setting alpha = 0.5*/ 
     background: rgba(0, 0, 0, 0.5);
     padding: 0.1em 2em 2em 2em;
-    border-radius: 1.5em;
 }
 
 .pictures {
@@ -215,9 +249,26 @@ a:visited {
     clear: both;
 }
 
-.pictures img {
-    border-radius: 1.5em;
+.pictures h2, .reviews h2 {
+    margin-bottom: 1em;
 }
+
+@media only screen and (min-width: 75em) {
+    .review1, .review2 {
+    width: 35%;
+    float: left;
+  }
+    
+    .review2 {
+        margin-left: 2em;
+    }
+    
+    .reviews {
+        margin-bottom: 40em;
+    }
+}
+
+
 
 
 
@@ -243,55 +294,4 @@ footer {
     padding-bottom: 2em;
     font-size: 0.8em;
     line-height: 1em;
-}
-
-
-
-
-
-/* MIN-WIDTH */
-
-@media only screen and (min-width: 45em) {
-    body {
-        width: 50%;
-    } 
-}
-
-
-@media only screen and (min-width: 75em) {
-     
-    .appetizers, .sushiappetizers, .lunch, .dessert {
-        float: left;
-         width: 50%;
-    }
-    
-    .menu {
-        margin-bottom: 65em;
-        margin-top: 0em;
-    }
-    
-    .address, .phones, .hours {
-        float: left;
-        width: 33%;
-        margin-bottom: 3em;
-    } 
-    
-     footer {
-        float: none;
-        clear: both;
-    }
-    
-    .review1, .review2 {
-        width: 35%;
-        float: left;
-  }
-    
-    .review2 {
-        margin-left: 2em;
-    }
-    
-    .reviews {
-        margin-bottom: 40em;
-    }
-   
 }
