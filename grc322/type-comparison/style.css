@@ -1,0 +1,65 @@
+h1, h2, h3, h4, p, ul, ol, li {margin: 0; padding:0; font-size: 1em; font-weight: normal;}
+
+
+html {
+    background: url(bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    font-family: 'Avenir', sans-serif;
+    background-color: #fafafa;
+    color: #333333;
+}
+
+body {
+    
+}
+
+article, footer {
+    max-width: 30em;
+    margin: 0 auto;
+    margin-top: 8em;
+}
+
+h1 {
+    font-size: 2.3em;
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-bottom: 3em;
+}
+
+h3 {
+    margin-top: 3.5em;
+    margin-bottom: 0.6em;
+    font-weight: 600;
+}
+
+h4 {
+    font-style: italic;
+}
+
+p {
+    line-height: 1.6em;
+    padding-bottom: 0.8em;
+}
+
+img {
+    max-width: 30em;
+    margin-bottom: 1.5em;
+}
+
+ul {
+    
+    margin: 0;
+    padding-left: 3em;
+    padding-bottom: 1em;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 1.6em;
+    font-size: 0.6em;
+}
