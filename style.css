@@ -1,0 +1,182 @@
+/* CSS DOCUMENT */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+
+
+/* styling for site */
+
+
+body {
+  background: url("wall.jpg") no-repeat fixed center;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: auto;
+}
+
+.container {
+  font-family: 'Avenir Next', sans-serif;
+  font-weight: 100;
+  width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  height: auto;
+  box-sizing: border-box;
+  border-radius: 30px;
+  
+}
+
+
+li a {
+    color: #000;
+    text-decoration: none;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: underline; 
+}
+
+a:visited {
+    color: #000;
+}
+
+h1 {
+    font-size: 1.5em;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin: 1.5em 0 1.5em 0;
+    text-align: center;
+    font-family: 'Didot', serif;
+}
+
+h2 {
+    font-size: 1.1em;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin: 3.5em 0 2.5em 0;
+    text-align: center;
+    font-family: 'Didot', serif;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+p {
+    line-height: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+i {
+    font-style: oblique;
+}
+
+img {
+    width: 15em;
+    margin-bottom: 1.5em;
+    margin-left: 9em;
+}
+
+footer {
+    font-size: 0.7em;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    color: #fff;
+    padding: 0.3em;
+    width: 30em;
+}
+
+
+
+
+
+/* tabs */
+#tabs {
+  width: 600px;
+  margin: 5em auto;
+}
+
+#tabs-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+#tabs-nav li {
+  float: left;
+  font-size: 0.6em;
+  margin-right: 6px;
+  padding: 15px 20px;
+  border-bottom:none;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Didot', serif;
+  letter-spacing: 0.12em;
+}
+
+#tabs-nav li:hover,
+li.active {
+  background-color: #F5F5F5;
+}
+
+.content {
+  padding: 10px;
+  border-top: none;
+  background-color: rgba(248,248,248,0.8);
+  padding: 2em;
+}
+
+
+
+/* quiz */
+
+.form-group {
+    margin-bottom: 2em;
+}
+
+.form-answers {
+    text-align: center;
+    font-style: oblique;
+}
+
+input {
+    border: none;
+}
